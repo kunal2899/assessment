@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sctop {
+  background: green;
+  padding: .5em;
+  margin: .5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.main h1 {
+  font-weight: 700;
+  margin: .5em;
+}
+
+.main .caption {
+  margin-bottom: 4em;
+}
+
+.main .box {
+  position: relative;
+  height: 1200px;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: orange;
+  margin: .5em;
+}
+
+.main .box.b1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5em;
+}
+
+.main .box.b1 .inner {
+  height: calc(100% - (.5em * 2));
+  width: calc(50% - (.5em * 2));
+  margin: .5em;
+  background-color: cyan;
+}
+
+.main .box.b2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: .5em;
+}
+
+.main .box.b2 .inner {
+  width: calc(100% - (.5em * 2));
+  height: calc(50% - (.5em * 2));
+  margin: .5em;
+  background-color: cyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em;
+}
+
+.main .box.b2 .inner p {
+  font-size: 1.5em;
+}
+
+.main .box.b3 .inner {
+  height: 45%;
+  width: 45%;
+  background-color: cyan;
+  position: absolute;
+}
+
+.main .box.b3 .inner.i1 {
+  top: 0;
+  left: 0;
+  margin-right: .5em;
+  margin-bottom: .5em;
+}
+
+.main .box.b3 .inner.i2 {
+  top: 0;
+  right: 0;
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+
+.main .box.b3 .inner.i3 {
+  bottom: 0;
+  left: 0;
+  margin-right: .5em;
+  margin-top: .5em;
+}
+
+.main .box.b3 .inner.i4 {
+  bottom: 0;
+  right: 0;
+  margin-left: .5em;
+  margin-top: .5em;
+}
+
+@media screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 1.5em;
+  }
+  .main .box.b1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .box.b1 .inner {
+    width: calc(100% - (.5em * 2));
+    height: calc(50% - (.5em * 2));
+  }
+}
+/*# sourceMappingURL=style.css.map */

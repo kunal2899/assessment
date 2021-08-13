@@ -1,0 +1,117 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sctop{
+    background: green;
+    padding: .5em;
+    margin: .5em;
+    width: fit-content;
+    font-weight: 600;
+    color: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.main{
+    h1{
+        font-weight: 700;
+        margin: .5em;
+    }
+    .caption{
+        margin-bottom: 4em;
+    }
+    .box{
+        position: relative;
+        height: 1200px;
+        width: 400px;
+        box-sizing: border-box;
+        background-color: orange;
+        margin: .5em;
+        &.b1{
+            display: flex;
+            padding: .5em;
+            .inner{
+                height: calc(100% - (.5em * 2)); //due to margin of .5em
+                width: calc(50% - (.5em * 2)); //due to margin of .5em
+                margin: .5em;
+                background-color: cyan;
+            }
+        }
+        &.b2{
+            display: flex;
+            flex-direction: column;
+            padding: .5em;
+            .inner{
+                width: calc(100% - (.5em * 2)); //due to margin of .5em
+                height: calc(50% - (.5em * 2)); //due to margin of .5em
+                margin: .5em;
+                background-color: cyan;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .5em;
+                p{
+                    font-size: 1.5em;
+                }
+            }
+        }
+        &.b3{
+            .inner{
+                height: 45%;
+                width: 45%;
+                background-color: cyan;
+                position: absolute;
+                &.i1{
+                    top: 0;
+                    left: 0;
+                    margin-right: .5em;
+                    margin-bottom: .5em;
+                }
+                &.i2{
+                    top: 0;
+                    right: 0;
+                    margin-left: .5em;
+                    margin-bottom: .5em;
+                }
+                &.i3{
+                    bottom: 0;
+                    left: 0;
+                    margin-right: .5em;
+                    margin-top: .5em;
+                }
+                &.i4{
+                    bottom: 0;
+                    right: 0;
+                    margin-left: .5em;
+                    margin-top: .5em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .main{
+        h1{
+            font-size: 1.5em;
+        }
+        .box{
+            &.b1{
+                flex-direction: column;
+                .inner{
+                    width: calc(100% - (.5em * 2)); //due to margin of .5em
+                    height: calc(50% - (.5em * 2)); //due to margin of .5em
+                }
+            }
+        }
+    }
+}
