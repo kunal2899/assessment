@@ -44,7 +44,7 @@ html {
 .main .box {
   position: relative;
   height: 1200px;
-  width: 400px;
+  width: 80%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: orange;
