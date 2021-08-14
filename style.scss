@@ -11,8 +11,8 @@ html{
 
 .sctop{
     background: green;
-    padding: .5em;
-    margin: .5em;
+    padding: 1em;
+    margin: 1em;
     width: fit-content;
     font-weight: 600;
     color: white;
@@ -24,44 +24,87 @@ html{
 .main{
     h1{
         font-weight: 700;
-        margin: .5em;
+        margin: 1em;
     }
     .caption{
         margin-bottom: 4em;
     }
     .box{
         position: relative;
-        height: 1200px;
+        height: 600px;
         width: 80%;
         box-sizing: border-box;
         background-color: orange;
-        margin: .5em;
+        margin: 1em;
         &.b1{
             display: flex;
-            padding: .5em;
+            padding: 1em;
+            flex-direction: column;
             .inner{
-                height: calc(100% - (.5em * 2)); //due to margin of .5em
-                width: calc(50% - (.5em * 2)); //due to margin of .5em
-                margin: .5em;
+                height: calc(50% - 2em);
+                width: calc(100% - 2em); 
+                position: absolute;
                 background-color: cyan;
+                &.i1{
+                    top: 0;
+                    left: 0;
+                }
+                &.i2{
+                    bottom: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    form{
+                        .form-group{
+                            margin: 1em;
+                            input{
+                                width: 80%;
+                            }
+                            label{
+                                margin-right: 1em;
+                            }
+                        }
+                        .btn-primary{
+                            float: right;
+                            margin: 1em;
+                        }
+                    }
+                }
             }
         }
         &.b2{
             display: flex;
             flex-direction: column;
-            padding: .5em;
+            // padding: 1em;
             .inner{
-                width: calc(100% - (.5em * 2)); //due to margin of .5em
-                height: calc(50% - (.5em * 2)); //due to margin of .5em
-                margin: .5em;
-                background-color: cyan;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: .5em;
-                p{
-                    font-size: 1.5em;
+            }
+            .wrap1{
+                display: flex;
+                margin-bottom: 1em;
+                flex-direction: row;
+                height: 50%;
+                .inner{
+                    margin: 1em;
+                    height: 100%;
+                    width: 50%;
+                    background-color: cyan;
+                    &.i1{
+                        margin-right: .5em;
+                    }
+                    &.i2{
+                        margin-left: .5em;
+                    }
                 }
+            }
+            .i3{
+                width: calc(100% - (1em * 2)); //due to margin of 1em
+                height: calc(50% - (1em * 2)); //due to margin of 1em
+                margin: 1em;
+                background-color: cyan;
             }
         }
         &.b3{
@@ -71,28 +114,28 @@ html{
                 background-color: cyan;
                 position: absolute;
                 &.i1{
-                    top: 0;
-                    left: 0;
-                    margin-right: .5em;
-                    margin-bottom: .5em;
+                    top: 1em;
+                    left: 1em;
+                    margin-right: 1em;
+                    margin-bottom: 1em;
                 }
                 &.i2{
                     top: 0;
                     right: 0;
-                    margin-left: .5em;
-                    margin-bottom: .5em;
+                    margin-left: 1em;
+                    margin-bottom: 1em;
                 }
                 &.i3{
                     bottom: 0;
                     left: 0;
-                    margin-right: .5em;
-                    margin-top: .5em;
+                    margin-right: 1em;
+                    margin-top: 1em;
                 }
                 &.i4{
-                    bottom: 0;
-                    right: 0;
-                    margin-left: .5em;
-                    margin-top: .5em;
+                    bottom: 1em;
+                    right: 1em;
+                    margin-left: 1em;
+                    margin-top: 1em;
                 }
             }
         }
@@ -108,8 +151,8 @@ html{
             &.b1{
                 flex-direction: column;
                 .inner{
-                    width: calc(100% - (.5em * 2)); //due to margin of .5em
-                    height: calc(50% - (.5em * 2)); //due to margin of .5em
+                    width: calc(100% - (1em * 2)); //due to margin of 1em
+                    height: calc(50% - (1em * 2)); //due to margin of 1em
                 }
             }
         }
